@@ -9,5 +9,5 @@ spec:
   - image: iam7hills/dockerdemo:tomcatapp-25
     name: app1
     ports:
-    - containerPort: 8080
+    - containerPort: 8888
     imagePullPolicy: Always
