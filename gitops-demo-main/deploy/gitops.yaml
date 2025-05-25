@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gitopsdemo 
+  name: gitopsdemo
   labels:
-    env: gitops 
+    env: gitops
+    app: webproject
 spec:
   containers:
-  - image: gayithri123/webproject
-    name: app1
+  - name: app1
+    image: gayithri123/webproject
     ports:
-    - containerPort: 8888
+    - containerPort: 8888    # Change this if your app listens on a different port
     imagePullPolicy: Always
